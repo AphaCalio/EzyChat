@@ -1,7 +1,7 @@
 const http = require('http')
  const port = 4000
 
-http.createServer((request, response) =>{
+http.createServer((request, responseg) =>{
     response.write('Welcome to this Server')
     response.end()
 }).listen(port)
@@ -9,8 +9,8 @@ http.createServer((request, response) =>{
 console.log(`Server is running at ${port}`)
 
 
-//const fs =require('fs')
+const fs =require('fs')
 
-//const data = fs.readFileSync('mine.txt')
+const data = fs.readFileSync('mine.txt')
 
-//console.log(data.toString())
+console.log(data.toString())
